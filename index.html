@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HIMTI Competition</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              dark: '#0F2C4C',
+              light: '#1B365D',
+              primary: '#00A3FF',
+              secondary: '#8B9DF8',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-sans text-brand-dark antialiased bg-white selection:bg-brand-primary selection:text-white">
+
+  <header id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 py-4">
+    <div class="container mx-auto px-6 md:px-12 lg:px-24 flex justify-between items-center">
+      <a href="#" class="flex items-center gap-3 relative z-10 w-12 h-12">
+        <img src="./public/HIMTI-blue.png" alt="HIMTI Logo" class="h-12 w-auto object-contain">
+      </a>
+
+      <nav class="hidden md:flex gap-8 font-semibold text-brand-dark">
+        <a href="#home" class="hover:text-brand-primary transition-colors">Home</a>
+        <a href="#events" class="hover:text-brand-primary transition-colors">Events</a>
+        <a href="#about" class="hover:text-brand-primary transition-colors">About</a>
+        <a href="#contact" class="hover:text-brand-primary transition-colors">Contact</a>
+      </nav>
+
+      <button id="mobile-menu-btn" class="md:hidden text-brand-dark focus:outline-none z-10">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu"
+      class="fixed inset-0 bg-white z-40 transform -translate-y-full opacity-0 pointer-events-none transition-all duration-300 ease-in-out flex flex-col items-center justify-center gap-8 text-2xl font-bold">
+      <a href="#home" class="mobile-link hover:text-brand-primary transition-colors">Home</a>
+      <a href="#events" class="mobile-link hover:text-brand-primary transition-colors">Events</a>
+      <a href="#about" class="mobile-link hover:text-brand-primary transition-colors">About</a>
+      <a href="#contact" class="mobile-link hover:text-brand-primary transition-colors">Contact</a>
+    </div>
+  </header>
+
+  <section id="home" class="relative min-h-screen flex items-center pt-24 pb-[6.8rem]">
+    <img src="./public/poly1.png" alt=""
+      class="absolute top-[-5%] right-[-10%] md:right-[-5%] w-[16.18rem] md:w-[26.18rem] lg:w-[42.36rem] opacity-90 z-0 pointer-events-none">
+
+    <img src="./public/poly2.png" alt=""
+      class="absolute bottom-[-16.18rem] left-[-10%] md:left-[-5%] w-[10rem] md:w-[16.18rem] lg:w-[26.18rem] opacity-90 z-0 pointer-events-none drop-shadow-lg">
+
+    <img src="./public/poly3.png" alt=""
+      class="absolute bottom-[5%] md:bottom-[10%] right-[-10%] md:right-[0%] w-[10rem] md:w-[16.18rem] lg:w-[26.18rem] opacity-90 z-0 pointer-events-none">
+
+    <div
+      class="container mx-auto px-6 md:px-12 lg:px-[6.8rem] relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
+      <div id="hero-text" class="w-full md:w-[38.2%]">
+        <h1
+          class="text-[2.6rem] md:text-[4.2rem] lg:text-[6.8rem] font-extrabold text-brand-light leading-tight mb-[1.6rem]">
+          HIMTI<br>
+          <span class="font-normal text-[1.6rem] md:text-[2.6rem] lg:text-[4.2rem]">COMPETITION</span>
+        </h1>
+        <p class="text-[1rem] md:text-[1.6rem] text-gray-600 mb-[2.6rem]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+
+      <div id="hero-image" class="w-full md:w-[61.8%] relative flex justify-center md:justify-end">
+        <img src="./public/saly1.png" alt="3D illustration student"
+          class="w-full max-w-[26rem] md:max-w-[42rem] object-contain relative z-10 drop-shadow-2xl">
+      </div>
+    </div>
+  </section>
+
+  <section id="events" class="py-[6.8rem] bg-brand-secondary relative">
+    <div class="container mx-auto px-6 md:px-12 lg:px-[6.8rem]">
+      <h2 class="text-[1.6rem] md:text-[2.6rem] font-bold text-white mb-[4.2rem] text-center" id="competitions-title">
+        COMPETITIONS
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-[2.6rem] mt-[4.2rem]" id="competition-cards">
+        <div
+          class="bg-white rounded-3xl p-[2.6rem] flex flex-col items-center text-center shadow-[0_2.6rem_4.2rem_-1.6rem_rgba(0,0,0,0.1)] hover:shadow-2xl transition-shadow competition-card relative mt-[6.8rem] md:mt-0">
+          <img src="./public/saly2.png" alt="UI/UX Design"
+            class="h-[10rem] md:h-[16.18rem] object-contain mb-[1.6rem] absolute -top-[6.8rem] md:-top-[10rem] drop-shadow-md">
+          <div class="pt-[6.8rem] md:pt-[10rem] flex flex-col flex-grow items-center w-full">
+            <h3 class="text-[1.6rem] font-bold text-brand-dark mb-[1rem]">UI/UX Design</h3>
+            <p class="text-[1rem] text-gray-600 mb-[2.6rem] flex-grow leading-[1.618]">Calling all creative minds!
+              Unleash your design prowess and
+              join our <b>UI/UX Design Competition</b>.</p>
+            <a href="#"
+              class="bg-brand-primary text-white font-bold py-[1rem] px-[2.6rem] rounded-full hover:bg-cyan-500 transition-colors btn-animate">Learn
+              More</a>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-3xl p-[2.6rem] flex flex-col items-center text-center shadow-[0_2.6rem_4.2rem_-1.6rem_rgba(0,0,0,0.1)] hover:shadow-2xl transition-shadow competition-card relative mt-[6.8rem] md:mt-0">
+          <img src="./public/saly4.png" alt="Competitive Programming"
+            class="h-[10rem] md:h-[16.18rem] object-contain mb-[1.6rem] absolute -top-[6.8rem] md:-top-[10rem] drop-shadow-md">
+          <div class="pt-[6.8rem] md:pt-[10rem] flex flex-col flex-grow items-center w-full">
+            <h3 class="text-[1.6rem] font-bold text-brand-dark mb-[1rem] leading-tight">Competitive<br>Programming</h3>
+            <p class="text-[1rem] text-gray-600 mb-[2.6rem] flex-grow leading-[1.618]">Showcase your coding skills,
+              solve <b>challenging
+                problems!</b></p>
+            <a href="#"
+              class="bg-brand-primary text-white font-bold py-[1rem] px-[2.6rem] rounded-full hover:bg-cyan-500 transition-colors btn-animate">Learn
+              More</a>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-3xl p-[2.6rem] flex flex-col items-center text-center shadow-[0_2.6rem_4.2rem_-1.6rem_rgba(0,0,0,0.1)] hover:shadow-2xl transition-shadow competition-card relative mt-[6.8rem] md:mt-0">
+          <img src="./public/saly3.png" alt="App Creation"
+            class="h-[10rem] md:h-[16.18rem] object-contain mb-[1.6rem] absolute -top-[6.8rem] md:-top-[10rem] drop-shadow-md">
+          <div class="pt-[6.8rem] md:pt-[10rem] flex flex-col flex-grow items-center w-full">
+            <h3 class="text-[1.6rem] font-bold text-brand-dark mb-[1rem]">App Creation</h3>
+            <p class="text-[1rem] text-gray-600 mb-[2.6rem] flex-grow leading-[1.618]">Design groundbreaking apps to
+              solve real-world problems in
+              our <b>App Creation Competition</b>.</p>
+            <a href="#"
+              class="bg-brand-primary text-white font-bold py-[1rem] px-[2.6rem] rounded-full hover:bg-cyan-500 transition-colors btn-animate">Learn
+              More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="pt-[6.8rem] pb-[4.2rem] bg-brand-dark text-white">
+    <div class="container mx-auto px-6 md:px-12 lg:px-[6.8rem]">
+      <h2 class="text-[1.6rem] md:text-[2.6rem] font-bold text-center mb-[4.2rem] tracking-wide" id="about-title">
+        ABOUT HIMTI COMPETITION
+      </h2>
+
+      <div class="flex flex-col md:flex-row gap-[4.2rem] items-center justify-center max-w-[68rem] mx-auto"
+        id="about-content">
+        <div
+          class="w-full md:w-[38.2%] flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-gray-500 pb-[2.6rem] md:pb-0 md:pr-[2.6rem] gap-[1.6rem]">
+          <img src="./public/HIMTI-white.png" alt="HIMTI Logo"
+            class="h-[4.2rem] md:h-[6.8rem] object-contain drop-shadow-md">
+          <img src="./public/BINUS-white.png" alt="BINUS University Logo"
+            class="h-[4.2rem] md:h-[6.8rem] object-contain drop-shadow-lg">
+        </div>
+
+        <div
+          class="w-full md:w-[61.8%] text-[1rem] md:text-[1.1rem] leading-[1.618] text-gray-300 font-light text-center md:text-left">
+          <p class="mb-[1.6rem]">
+            Hosted by <b class="text-white font-medium">HIMTI BINUS University</b>, the <b
+              class="text-white font-medium">HIMTI Competition</b> is an exciting event that brings together the
+            brightest talents in technology and design. Participants can showcase their skills in three dynamic fields:
+            <b class="text-white font-medium">UI/UX Design</b>, <b class="text-white font-medium">Competitive
+              Programming</b>, and <b class="text-white font-medium">App Creation</b>. This competition is a platform
+            for innovation, creativity, and excellence, offering participants the opportunity to solve real-world
+            problems, create stunning user experiences, and develop innovative applications.
+          </p>
+          <p>
+            Join us and be a part of this prestigious event, where the future of technology is shaped!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="pb-[6.8rem] pt-[4.2rem] bg-brand-dark text-white">
+    <div class="container mx-auto px-6 md:px-12 lg:px-[6.8rem] max-w-[68rem] text-center">
+      <h2 class="text-[1.6rem] md:text-[2.6rem] font-bold mb-[1.6rem] tracking-wide" id="contact-title">
+        CONTACT US
+      </h2>
+      <p class="text-gray-300 mb-[4.2rem] text-[1rem] leading-[1.618] font-light max-w-[42rem] mx-auto"
+        id="contact-desc">
+        We'd love to hear from you! Whether you have questions,
+        feedback, or need assistance, please feel free to reach out.
+        Enter your email below, and our team will get back to you as
+        soon as possible.
+      </p>
+
+      <form class="flex flex-col gap-[1.6rem] w-full md:max-w-[61.8%] mx-auto" id="contact-form">
+        <input type="text" placeholder="Name"
+          class="w-full px-[1.6rem] py-[1rem] rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-brand-primary placeholder-gray-400 font-medium text-[1rem]">
+        <input type="email" placeholder="Email"
+          class="w-full px-[1.6rem] py-[1rem] rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-brand-primary placeholder-gray-400 font-medium text-[1rem]">
+        <textarea placeholder="Message..." rows="5"
+          class="w-full px-[1.6rem] py-[1.6rem] rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-brand-primary placeholder-gray-400 font-medium resize-none text-[1rem]"></textarea>
+        <div class="mt-[1rem]">
+          <button type="submit"
+            class="bg-brand-secondary text-white font-semibold py-[1rem] px-[4.2rem] rounded-md hover:bg-opacity-90 transition-all shadow-md btn-animate text-[1rem]">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-white py-[4.2rem]" id="footer-section">
+    <div class="container mx-auto px-6 md:px-12 lg:px-[6.8rem] flex flex-col items-center">
+      <div
+        class="w-full flex flex-col md:flex-row justify-between items-center md:items-start mb-[4.2rem] gap-[2.6rem]">
+        <div class="flex items-center gap-[1.6rem] md:gap-[2.6rem]">
+          <img src="./public/HIMTI-blue.png" alt="HIMTI Logo"
+            class="h-[4.2rem] md:h-[6.8rem] object-contain border-r border-gray-300 pr-[1.6rem] md:pr-[2.6rem]">
+          <img src="./public/BINUS-color.png" alt="BINUS University Logo"
+            class="h-[4.2rem] md:h-[6.8rem] object-contain">
+        </div>
+
+        <div class="flex flex-col gap-[1rem] items-center md:items-start">
+          <a href="#"
+            class="flex items-center gap-[1rem] text-gray-800 hover:text-brand-primary transition-colors social-link">
+            <img src="./public/i-instagram-white-blank.png" alt="Instagram" class="w-[1.6rem] h-[1.6rem]">
+            <span class="text-[1rem] font-semibold">@himti_binus</span>
+          </a>
+          <a href="#"
+            class="flex items-center gap-[1rem] text-gray-800 hover:text-brand-primary transition-colors social-link">
+            <img src="./public/i-youtube-white-fill.png" alt="YouTube" class="w-[1.6rem] h-[1.6rem]">
+            <span class="text-[1rem] font-semibold">HIMTI BINUS</span>
+          </a>
+          <a href="#"
+            class="flex items-center gap-[1rem] text-gray-800 hover:text-brand-primary transition-colors social-link">
+            <img src="./public/i-tiktok-white-fil.png" alt="TikTok" class="w-[1.6rem] h-[1.6rem]">
+            <span class="text-[1rem] font-semibold">@himtibinus</span>
+          </a>
+        </div>
+      </div>
+
+      <p class="text-[1rem] text-gray-600 font-medium text-center w-full">
+        © Copyright 2024 HIMTI BINUS University.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/framer-motion@11.1.7/dist/framer-motion.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
