@@ -33,8 +33,8 @@
 </head>
 
 <body class="font-sans text-brand-dark antialiased bg-white selection:bg-brand-primary selection:text-white">
-
-  <header id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 py-4">
+  <!-- NAVBAR -->
+  <header id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 py-4 bg-red-600">
     <div class="container mx-auto px-6 md:px-12 lg:px-24 flex justify-between items-center">
       <a href="#" class="flex items-center gap-3 relative z-10 w-12 h-12">
         <img src="./public/HIMTI-blue.png" alt="HIMTI Logo" class="h-12 w-auto object-contain">
@@ -64,6 +64,7 @@
     </div>
   </header>
 
+  <!-- HERO -->
   <section id="home" class="relative min-h-screen flex items-center pt-24 pb-[6.8rem]">
     <img src="./public/poly1.png" alt=""
       class="absolute top-[-5%] right-[-10%] md:right-[-5%] w-[16.18rem] md:w-[26.18rem] lg:w-[42.36rem] opacity-90 z-0 pointer-events-none">
@@ -94,6 +95,7 @@
     </div>
   </section>
 
+  <!-- EVENTS/COMPETITIONS -->
   <section id="events" class="py-[6.8rem] bg-brand-secondary relative">
     <div class="container mx-auto px-6 md:px-12 lg:px-[6.8rem]">
       <h2 class="text-[1.6rem] md:text-[2.6rem] font-bold text-white mb-[4.2rem] text-center" id="competitions-title">
@@ -101,15 +103,21 @@
       </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-[2.6rem] mt-[4.2rem]" id="competition-cards">
+
         <div
           class="bg-white rounded-3xl p-[2.6rem] flex flex-col items-center text-center shadow-[0_2.6rem_4.2rem_-1.6rem_rgba(0,0,0,0.1)] hover:shadow-2xl transition-shadow competition-card relative mt-[6.8rem] md:mt-0">
-          <img src="./public/saly2.png" alt="UI/UX Design"
-            class="h-[10rem] md:h-[16.18rem] object-contain mb-[1.6rem] absolute -top-[6.8rem] md:-top-[10rem] drop-shadow-md">
-          <div class="pt-[6.8rem] md:pt-[10rem] flex flex-col flex-grow items-center w-full">
+
+          <div class="h-full flex flex-col items-center">
+
+            <img src="./public/saly2.png" alt="UI/UX Design"
+              class="h-[10rem] md:h-[16.18rem] object-contain mb-[1.6rem] -top-[6.8rem] md:-top-[10rem] drop-shadow-md">
+
             <h3 class="text-[1.6rem] font-bold text-brand-dark mb-[1rem]">UI/UX Design</h3>
+
             <p class="text-[1rem] text-gray-600 mb-[2.6rem] flex-grow leading-[1.618]">Calling all creative minds!
               Unleash your design prowess and
               join our <b>UI/UX Design Competition</b>.</p>
+
             <a href="#"
               class="bg-brand-primary text-white font-bold py-[1rem] px-[2.6rem] rounded-full hover:bg-cyan-500 transition-colors btn-animate">Learn
               More</a>
@@ -118,9 +126,10 @@
 
         <div
           class="bg-white rounded-3xl p-[2.6rem] flex flex-col items-center text-center shadow-[0_2.6rem_4.2rem_-1.6rem_rgba(0,0,0,0.1)] hover:shadow-2xl transition-shadow competition-card relative mt-[6.8rem] md:mt-0">
-          <img src="./public/saly4.png" alt="Competitive Programming"
-            class="h-[10rem] md:h-[16.18rem] object-contain mb-[1.6rem] absolute -top-[6.8rem] md:-top-[10rem] drop-shadow-md">
-          <div class="pt-[6.8rem] md:pt-[10rem] flex flex-col flex-grow items-center w-full">
+
+          <div class="h-full flex flex-col items-center">
+            <img src="./public/saly4.png" alt="Competitive Programming"
+              class="h-[10rem] md:h-[16.18rem] object-contain mb-[1.6rem] -top-[6.8rem] md:-top-[10rem] drop-shadow-md">
             <h3 class="text-[1.6rem] font-bold text-brand-dark mb-[1rem] leading-tight">Competitive<br>Programming</h3>
             <p class="text-[1rem] text-gray-600 mb-[2.6rem] flex-grow leading-[1.618]">Showcase your coding skills,
               solve <b>challenging
@@ -133,9 +142,9 @@
 
         <div
           class="bg-white rounded-3xl p-[2.6rem] flex flex-col items-center text-center shadow-[0_2.6rem_4.2rem_-1.6rem_rgba(0,0,0,0.1)] hover:shadow-2xl transition-shadow competition-card relative mt-[6.8rem] md:mt-0">
-          <img src="./public/saly3.png" alt="App Creation"
-            class="h-[10rem] md:h-[16.18rem] object-contain mb-[1.6rem] absolute -top-[6.8rem] md:-top-[10rem] drop-shadow-md">
-          <div class="pt-[6.8rem] md:pt-[10rem] flex flex-col flex-grow items-center w-full">
+          <div class="flex flex-col flex-grow items-center w-full">
+            <img src="./public/saly3.png" alt="App Creation"
+              class="h-[10rem] md:h-[16.18rem] object-contain mb-[1.6rem] -top-[6.8rem] md:-top-[10rem] drop-shadow-md">
             <h3 class="text-[1.6rem] font-bold text-brand-dark mb-[1rem]">App Creation</h3>
             <p class="text-[1rem] text-gray-600 mb-[2.6rem] flex-grow leading-[1.618]">Design groundbreaking apps to
               solve real-world problems in
@@ -149,6 +158,7 @@
     </div>
   </section>
 
+  <!-- ABOUT -->
   <section id="about" class="pt-[6.8rem] pb-[4.2rem] bg-brand-dark text-white">
     <div class="container mx-auto px-6 md:px-12 lg:px-[6.8rem]">
       <h2 class="text-[1.6rem] md:text-[2.6rem] font-bold text-center mb-[4.2rem] tracking-wide" id="about-title">
@@ -184,6 +194,7 @@
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section id="contact" class="pb-[6.8rem] pt-[4.2rem] bg-brand-dark text-white">
     <div class="container mx-auto px-6 md:px-12 lg:px-[6.8rem] max-w-[68rem] text-center">
       <h2 class="text-[1.6rem] md:text-[2.6rem] font-bold mb-[1.6rem] tracking-wide" id="contact-title">
@@ -214,6 +225,7 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="bg-white py-[4.2rem]" id="footer-section">
     <div class="container mx-auto px-6 md:px-12 lg:px-[6.8rem] flex flex-col items-center">
       <div
