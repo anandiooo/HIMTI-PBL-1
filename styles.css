@@ -1,1 +1,5 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+.nav-scrolled {
+  box-shadow: 0 4px 24px rgba(0, 52, 89, 0.12);
+}
