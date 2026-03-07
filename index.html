@@ -7,20 +7,23 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            sans: ['Montserrat', 'sans-serif'],
+            sans: ['DM Sans', 'sans-serif'],
+            grotesk: ['Space Grotesk', 'sans-serif'],
           },
           colors: {
             brand: {
               primary: '#003459',
               secondary: '#00A7E1',
               tertiary: '#808AE7',
+              dark: '#00171F',
             }
           }
         }
@@ -34,8 +37,8 @@
   <header class="w-full">
     <nav class="flex items-center justify-start p-4">
       <div class="flex items-center">
-        <img src="public/HIMTI-blue-big.jpg" alt="HIMTI Logo" class="h-14 mr-10 ml-10">
-        <div class="flex items-center space-x-10 font-semibold text-xl">
+        <img src="public/HIMTI-blue-big.jpg" alt="HIMTI Logo" class="h-16 mr-10 ml-10">
+        <div class="flex items-center space-x-10 font-semibold text-2xl">
           <a href="#" class="text-brand-primary">Home</a>
           <a href="#" class="text-brand-primary">Events</a>
           <a href="#" class="text-brand-primary">About</a>
@@ -45,6 +48,23 @@
     </nav>
   </header>
 
-  
+  <!-- Hero -->
+  <main class="container mx-auto">
+    <div class="flex items-center justify-between">
+      <div class="flex flex-col justify-center">
+        <h1 class="text-brand-primary mt-20">
+          <span class="font-black text-9xl">HIMTI</span>
+          <br>
+          <span class="font-semibold text-8xl">COMPETITION</span>
+        </h1>
+        <p class="mt-10 text-5xl text-brand-dark mx-auto font-grotesk">
+          Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.
+        </p>
+      </div>
+      <div>
+        <img src="public/saly1.png" alt="Illustration" class="w-full">
+      </div>
+    </div>
+  </main>
 </body>
 </html>
