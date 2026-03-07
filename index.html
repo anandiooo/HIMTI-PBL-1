@@ -33,6 +33,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-white"> 
+
   <!-- HIMTI NavBar -->
   <header class="w-full">
     <nav class="flex items-center justify-start p-4">
@@ -49,13 +50,13 @@
   </header>
 
   <!-- Hero -->
-  <main class="container mx-auto">
+  <section class="container mx-auto mb-40">
     <div class="flex items-center justify-between">
       <div class="flex flex-col justify-center">
         <h1 class="text-brand-primary mt-20">
           <span class="font-black text-9xl">HIMTI</span>
           <br>
-          <span class="font-semibold text-8xl">COMPETITION</span>
+          <span class="font-medium text-8xl">COMPETITION</span>
         </h1>
         <p class="mt-10 text-5xl text-brand-dark mx-auto font-grotesk">
           Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.
@@ -65,6 +66,34 @@
         <img src="public/saly1.png" alt="Illustration" class="w-full">
       </div>
     </div>
-  </main>
+  </section>
+
+  <!-- Competitions -->
+  <section class="bg-brand-tertiary py-20">
+    <div class="container mx-auto">
+      <h2 class="text-white font-semibold text-6xl mb-20">COMPETITIONS</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-lg p-10 text-center font-grotesk drop-shadow-xl flex flex-col">
+          <img src="public/saly4.png" alt="UI/UX Design" class="mx-auto mb-4">
+          <h3 class="text-4xl font-bold mb-6">UI/UX Design</h3>
+          <p class="text-brand-dark mb-10 text-xl flex-grow">Calling all creative minds! Unleash your design prowess and join our UI/UX Design Competition.</p>
+          <a href="#" class="bg-brand-secondary text-white font-bold py-2 px-6 rounded-lg mt-auto self-center mb-2 text-3xl">Learn More</a>
+        </div>
+        <div class="bg-white rounded-lg p-10 text-center font-grotesk drop-shadow-xl flex flex-col">
+          <img src="public/saly2.png" alt="Competitive Programming" class="mx-auto mb-4">
+          <h3 class="text-4xl font-bold mb-6">Competitive Programming</h3>
+          <p class="text-brand-dark mb-10 text-xl flex-grow">Showcase your coding skills, solve challenging problems!</p>
+          <a href="#" class="bg-brand-secondary text-white font-bold py-2 px-6 rounded-lg mt-auto self-center mb-2 text-3xl">Learn More</a>
+        </div>
+        <div class="bg-white rounded-lg p-10 text-center font-grotesk drop-shadow-xl flex flex-col">
+          <img src="public/saly3.png" alt="App Creation" class="mx-auto mb-12">
+          <h3 class="text-4xl font-bold mb-6">App Creation</h3>
+          <p class="text-brand-dark mb-10 text-xl flex-grow">Design groundbreaking apps to solve real-world problems in our App Creation Competition.</p>
+          <a href="#" class="bg-brand-secondary text-white font-bold py-2 px-6 rounded-lg mt-auto self-center mb-2 text-3xl">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
