@@ -1,11 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>HIMTI Competition</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              primary: '#003459',
+              secondary: '#00A7E1',
+              tertiary: '#808AE7',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="bg-white"> 
+  <!-- HIMTI NavBar -->
+  <header class="w-full">
+    <nav class="flex items-center justify-start p-4">
+      <div class="flex items-center">
+        <img src="public/HIMTI-blue-big.jpg" alt="HIMTI Logo" class="h-14 mr-10 ml-10">
+        <div class="flex items-center space-x-10 font-semibold text-xl">
+          <a href="#" class="text-brand-primary">Home</a>
+          <a href="#" class="text-brand-primary">Events</a>
+          <a href="#" class="text-brand-primary">About</a>
+          <a href="#" class="text-brand-primary">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
   
 </body>
 </html>
