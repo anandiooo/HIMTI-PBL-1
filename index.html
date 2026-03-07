@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
   <script>
     tailwind.config = {
       theme: {
@@ -17,6 +18,7 @@
           fontFamily: {
             sans: ['DM Sans', 'sans-serif'],
             grotesk: ['Space Grotesk', 'sans-serif'],
+            nunito: ['Nunito Sans', 'sans-serif'],
           },
           colors: {
             brand: {
@@ -155,6 +157,35 @@
       </form>
     </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t-8 border-brand-primary pt-24 py-10">
+    <div class="container mx-auto px-10">
+      <div class="flex items-center justify-between mb-8">
+        <div class="flex items-center gap-8">
+          <img src="public/BINUS-color.png" alt="BINUS University">
+          <img src="public/HIMTI-blue.png" alt="HIMTI BINUS">
+        </div>
+        <div class="flex flex-col gap-3 text-brand-dark font-nunito text-lg">
+          <a href="#" class="flex items-center gap-3 hover:opacity-75 transition">
+            <img src="public/i-instagram-white-blank.png" alt="Instagram" class="h-10 w-10 object-contain invert">
+            <span class="text-3xl ml-6">@himti_binus</span>
+          </a>
+          <a href="#" class="flex items-center gap-3 hover:opacity-75 transition">
+            <img src="public/i-youtube-white-fill.png" alt="YouTube" class="h-10 w-10 object-contain invert">
+            <span class="text-3xl ml-6">HIMTI BINUS</span>
+          </a>
+          <a href="#" class="flex items-center gap-3 hover:opacity-75 transition">
+            <img src="public/i-tiktok-white-fil.png" alt="TikTok" class="h-10 w-10 object-contain invert">
+            <span class="text-3xl ml-6">@himtibinus</span>
+          </a>
+        </div>
+      </div>
+      <p class="text-center text-brand-dark font-nunito text-3xl mb-20 mt-14">
+        &copy; Copyright 2024 HIMTI BINUS University.
+      </p>
+    </div>
+  </footer>
 
 </body>
 </html>
