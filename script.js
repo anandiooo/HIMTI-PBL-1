@@ -35,32 +35,12 @@ mobileLinks.forEach(link => {
 });
 
 animate(
-  "#hero-text h1",
-  { opacity: [0, 1], x: [-50, 0] },
-  { duration: 0.8, easing: "ease-out" }
-);
-animate(
-  "#hero-text p",
-  { opacity: [0, 1], x: [-50, 0] },
-  { duration: 0.8, delay: 0.2, easing: "ease-out" }
-);
-animate(
-  "#hero-image img",
-  { opacity: [0, 1], y: [50, 0] },
-  { duration: 1, delay: 0.4, easing: "ease-out" }
-);
-animate(
   "#hero-image img",
   { y: [0, -15, 0] },
-  { duration: 4, repeat: Infinity, easing: "ease-in-out", delay: 1.4 }
+  { duration: 4, repeat: Infinity, easing: "ease-in-out" }
 );
 
 inView("#events", () => {
-  animate(
-    "#competitions-title",
-    { opacity: [0, 1], y: [30, 0] },
-    { duration: 0.6, easing: "ease-out" }
-  );
   animate(
     ".competition-card",
     { opacity: [0, 1], y: [50, 0] },
@@ -69,34 +49,9 @@ inView("#events", () => {
 });
 
 inView("#about", () => {
-  animate(
-    "#about-title",
-    { opacity: [0, 1], y: [30, 0] },
-    { duration: 0.6, easing: "ease-out" }
-  );
-  animate(
-    "#about-content",
-    { opacity: [0, 1], y: [30, 0] },
-    { duration: 0.6, delay: 0.2, easing: "ease-out" }
-  );
 });
 
 inView("#contact", () => {
-  animate(
-    "#contact-title",
-    { opacity: [0, 1], y: [30, 0] },
-    { duration: 0.6, easing: "ease-out" }
-  );
-  animate(
-    "#contact-desc",
-    { opacity: [0, 1], y: [30, 0] },
-    { duration: 0.6, delay: 0.1, easing: "ease-out" }
-  );
-  animate(
-    "#contact-form",
-    { opacity: [0, 1], y: [30, 0] },
-    { duration: 0.6, delay: 0.2, easing: "ease-out" }
-  );
 });
 
 const buttons = document.querySelectorAll('.btn-animate');
