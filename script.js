@@ -40,14 +40,6 @@ animate(
   { duration: 4, repeat: Infinity, easing: "ease-in-out" }
 );
 
-inView("#events", () => {
-  animate(
-    ".competition-card",
-    { opacity: [0, 1], y: [50, 0] },
-    { duration: 0.6, delay: stagger(0.2), easing: "ease-out" }
-  );
-});
-
 inView("#about", () => {
 });
 
